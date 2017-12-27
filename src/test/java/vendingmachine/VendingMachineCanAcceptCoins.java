@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class VendingMachineTest {
+public class VendingMachineCanAcceptCoins {
 	VendingMachine underTest;
 
 	@Before
