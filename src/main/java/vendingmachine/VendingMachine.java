@@ -8,7 +8,6 @@ public class VendingMachine {
 	double runningTotal;
 	String display;
 	String rejectedCoin;
-	String coinReturn;
 	public double insertCoin(String coin) {
 		double value = 0;
 		switch(coin) {
@@ -35,13 +34,14 @@ public class VendingMachine {
 		return display;
 	}
 	public String getCoinReturn() {
-		if (runningTotal%10 ==0) {
+		String coinReturn= "peso";
+		if (runningTotal-10 >=0) {
 			coinReturn = "dime";
 			runningTotal -= 0.10;
-		} else if (runningTotal%25 ==0) {
+		} else if (runningTotal-25 ==0) {
 			coinReturn = "quarter";
 			runningTotal -=0.25;
-		} else if (runningTotal%5==0) {
+		} else if (runningTotal-5==0) {
 			coinReturn = "nickel";
 			runningTotal -= .05;
 		}

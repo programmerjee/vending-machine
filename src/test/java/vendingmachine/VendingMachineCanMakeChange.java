@@ -13,7 +13,7 @@ public class VendingMachineCanMakeChange {
 		underTest = new VendingMachine();
 	}
 	@Test
-	public void whenRunningTotalIsGreaterThanPriceCoinsAreReturned() {
+	public void whenRunningTotalIsGreaterThanPriceDifferenceIsCalculated() {
 		underTest.insertCoin("quarter");
 		underTest.insertCoin("quarter");
 		underTest.insertCoin("quarter");
